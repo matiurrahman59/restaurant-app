@@ -1,0 +1,141 @@
+.about-section {
+  margin-top: 14.2rem;
+
+  h2 {
+    @media only screen and (max-width: 26.5625em) {
+      text-align: center;
+    }
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+
+    @media only screen and (max-width: 26.5625em) {
+      gap: 5rem;
+    }
+  }
+
+  .about {
+    display: grid;
+    gap: 9rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media only screen and (max-width: 26.5625em) {
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+    }
+
+    &__text-box {
+      max-width: 51.7rem;
+
+      h3 {
+        max-width: 47rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 26.5625em) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .even {
+      order: 1;
+
+      @media only screen and (max-width: 26.5625em) {
+        order: 0;
+      }
+    }
+  }
+}
+
+.category-section {
+  margin-top: 8rem;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+  .category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+
+    &-name {
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+      border-radius: 4px;
+      background-color: var(--clr-white);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+      }
+
+      span {
+        color: var(--clr-primary);
+        font-size: 2.4rem;
+      }
+    }
+
+    &-active {
+      background-color: var(--clr-primary);
+
+      span {
+        color: var(--clr-white);
+      }
+    }
+  }
+
+  .item-container {
+    margin-top: 2rem;
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.4rem;
+    }
+
+    .item {
+      background: var(--clr-white);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 2.2rem;
+      padding-bottom: 2rem;
+      // width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.4rem;
+
+      // img {
+      //   width: 22rem;
+      //   height: 12.2rem;
+      // }
+
+      .item-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        button {
+          background: var(--clr-primary);
+          color: var(--clr-white);
+          border: none;
+          padding: 0.6rem 2.2rem;
+          border-radius: 5px;
+          margin-top: 2.4rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

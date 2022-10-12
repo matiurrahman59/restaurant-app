@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Restaurant App</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="header">
+          <div class="mobile-menu">
+            <button>
+              <img src="./img/mobile-menu.png" alt="mobile menu-btn" />
+            </button>
+
+            <a href="#" class="logo header-logo">Taste now</a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="#" class="header__nav-link-active">Home</a></li>
+              <li><a href="#" class="header__nav-link">About us</a></li>
+              <li><a href="#" class="header__nav-link">Blog</a></li>
+              <li><a href="#" class="header__nav-link">Contact us</a></li>
+              <a href="#" class="shopping-cart">
+                <svg
+                  width="43"
+                  height="43"
+                  viewBox="0 0 43 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_272)">
+                    <path
+                      d="M15.9219 38.2222C17.4061 38.2222 18.6094 37.0189 18.6094 35.5347C18.6094 34.0504 17.4061 32.8472 15.9219 32.8472C14.4376 32.8472 13.2344 34.0504 13.2344 35.5347C13.2344 37.0189 14.4376 38.2222 15.9219 38.2222Z"
+                      fill="#3F3F3F"
+                    />
+                    <path
+                      d="M32.2499 38.2222C33.7342 38.2222 34.9374 37.0189 34.9374 35.5347C34.9374 34.0504 33.7342 32.8472 32.2499 32.8472C30.7657 32.8472 29.5624 34.0504 29.5624 35.5347C29.5624 37.0189 30.7657 38.2222 32.2499 38.2222Z"
+                      fill="#3F3F3F"
+                    />
+                    <path
+                      d="M39.5122 6.41406C39.401 6.27704 39.2609 6.16634 39.1019 6.08993C38.9428 6.01352 38.7689 5.97328 38.5924 5.97211H13.7241L14.5005 8.361H37.0277L33.8385 22.6943H15.9219L10.4633 5.41072C10.4042 5.22733 10.3017 5.06093 10.1644 4.92574C10.0272 4.79055 9.85922 4.69057 9.67494 4.63433L4.77772 3.12933C4.62713 3.08306 4.46891 3.0669 4.31208 3.08178C4.15526 3.09665 4.00289 3.14227 3.8637 3.21603C3.58257 3.36499 3.37214 3.61952 3.27869 3.92364C3.18524 4.22775 3.21642 4.55654 3.36538 4.83766C3.51434 5.11878 3.76888 5.32922 4.07299 5.42267L8.36105 6.73656L13.8435 24.056L11.8847 25.6566L11.7294 25.8118C11.2448 26.3702 10.9702 27.0801 10.9528 27.8192C10.9353 28.5583 11.1762 29.2804 11.6338 29.861C11.9594 30.2569 12.3731 30.5711 12.8418 30.7785C13.3106 30.986 13.8213 31.0808 14.3333 31.0554H34.2686C34.5853 31.0554 34.8891 30.9296 35.1131 30.7056C35.3372 30.4816 35.463 30.1778 35.463 29.861C35.463 29.5442 35.3372 29.2404 35.1131 29.0164C34.8891 28.7924 34.5853 28.6666 34.2686 28.6666H14.1422C14.0046 28.6619 13.8706 28.6218 13.7531 28.5502C13.6356 28.4786 13.5385 28.3778 13.4712 28.2578C13.404 28.1377 13.3689 28.0023 13.3692 27.8647C13.3696 27.727 13.4054 27.5918 13.4733 27.4721L16.3519 25.0832H34.7941C35.0702 25.09 35.3401 25.0008 35.5579 24.831C35.7757 24.6611 35.9279 24.421 35.9885 24.1516L39.7749 7.42933C39.8113 7.25126 39.8065 7.06725 39.7609 6.89131C39.7154 6.71537 39.6303 6.55214 39.5122 6.41406Z"
+                      fill="#3F3F3F"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_272">
+                      <rect width="43" height="43" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <button class="btn btn-primary">Sign up</button>
+            </ul>
+          </nav>
+
+          <div class="shopping-cart-mb">
+            <a href="#">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_272)">
+                  <path
+                    d="M15.9219 38.2222C17.4061 38.2222 18.6094 37.0189 18.6094 35.5347C18.6094 34.0504 17.4061 32.8472 15.9219 32.8472C14.4376 32.8472 13.2344 34.0504 13.2344 35.5347C13.2344 37.0189 14.4376 38.2222 15.9219 38.2222Z"
+                    fill="#3F3F3F"
+                  />
+                  <path
+                    d="M32.2499 38.2222C33.7342 38.2222 34.9374 37.0189 34.9374 35.5347C34.9374 34.0504 33.7342 32.8472 32.2499 32.8472C30.7657 32.8472 29.5624 34.0504 29.5624 35.5347C29.5624 37.0189 30.7657 38.2222 32.2499 38.2222Z"
+                    fill="#3F3F3F"
+                  />
+                  <path
+                    d="M39.5122 6.41406C39.401 6.27704 39.2609 6.16634 39.1019 6.08993C38.9428 6.01352 38.7689 5.97328 38.5924 5.97211H13.7241L14.5005 8.361H37.0277L33.8385 22.6943H15.9219L10.4633 5.41072C10.4042 5.22733 10.3017 5.06093 10.1644 4.92574C10.0272 4.79055 9.85922 4.69057 9.67494 4.63433L4.77772 3.12933C4.62713 3.08306 4.46891 3.0669 4.31208 3.08178C4.15526 3.09665 4.00289 3.14227 3.8637 3.21603C3.58257 3.36499 3.37214 3.61952 3.27869 3.92364C3.18524 4.22775 3.21642 4.55654 3.36538 4.83766C3.51434 5.11878 3.76888 5.32922 4.07299 5.42267L8.36105 6.73656L13.8435 24.056L11.8847 25.6566L11.7294 25.8118C11.2448 26.3702 10.9702 27.0801 10.9528 27.8192C10.9353 28.5583 11.1762 29.2804 11.6338 29.861C11.9594 30.2569 12.3731 30.5711 12.8418 30.7785C13.3106 30.986 13.8213 31.0808 14.3333 31.0554H34.2686C34.5853 31.0554 34.8891 30.9296 35.1131 30.7056C35.3372 30.4816 35.463 30.1778 35.463 29.861C35.463 29.5442 35.3372 29.2404 35.1131 29.0164C34.8891 28.7924 34.5853 28.6666 34.2686 28.6666H14.1422C14.0046 28.6619 13.8706 28.6218 13.7531 28.5502C13.6356 28.4786 13.5385 28.3778 13.4712 28.2578C13.404 28.1377 13.3689 28.0023 13.3692 27.8647C13.3696 27.727 13.4054 27.5918 13.4733 27.4721L16.3519 25.0832H34.7941C35.0702 25.09 35.3401 25.0008 35.5579 24.831C35.7757 24.6611 35.9279 24.421 35.9885 24.1516L39.7749 7.42933C39.8113 7.25126 39.8065 7.06725 39.7609 6.89131C39.7154 6.71537 39.6303 6.55214 39.5122 6.41406Z"
+                    fill="#3F3F3F"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_272">
+                    <rect width="43" height="43" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero">
+          <div class="hero__text-box">
+            <h1 class="heading-1">
+              Experience food <span class="clr-primary">Delivery</span> like no
+              other
+            </h1>
+            <p class="paragraph u-margin-top">
+              We deliver the food of your choice wherever, whenever. Select your
+              food from only the top restaurants in the area, and get it in a
+              flash. Download the app now to discover more.
+            </p>
+          </div>
+          <div class="hero__img-box">
+            <img src="./img/hero-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main-header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="category-section">
+          <!-- Section Title -->
+          <h2 class="heading-2 u-center-text">
+            Our Popular
+            <span class="clr-primary">Categories</span>
+          </h2>
+
+          <!-- Category Name -->
+          <div class="category">
+            <!-- Item 1 -->
+            <div class="category-name category-active">
+              <div>
+                <svg
+                  width="39"
+                  height="40"
+                  viewBox="0 0 39 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.1181 7.85623C28.8818 6.13029 24.4363 5.3833 19.5334 5.3833C14.6304 5.3833 9.84438 6.20518 5.93591 7.8197C5.19805 8.12106 4.54237 8.64158 5.01632 9.60043C5.40078 10.3794 14.6934 30.8614 18.2239 38.167C18.3428 38.4138 18.5289 38.622 18.7609 38.7677C18.9929 38.9135 19.2613 38.9908 19.5352 38.9908C19.8092 38.9908 20.0775 38.9135 20.3095 38.7677C20.5415 38.622 20.7276 38.4138 20.8466 38.167L34.0011 9.65523C34.2924 9.02512 34.0833 8.24891 33.1181 7.85623V7.85623Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M36.0056 4.16696C31.2506 2.28578 25.3934 1 19.5334 1C13.6734 1 7.90385 2.16706 3.04839 4.11217C2.6201 4.2875 1.8174 4.69205 2.03748 5.37238L2.92146 7.575C3.28673 8.32382 3.7132 8.32382 4.29673 8.32382C4.46019 8.32382 4.68849 8.2325 4.96153 8.12475C9.60813 6.3199 14.5486 5.39045 19.5334 5.38334C24.7167 5.38334 30.0269 6.47917 34.108 8.12292C34.4358 8.25077 34.6184 8.322 34.7728 8.322C35.3737 8.322 35.7207 8.52199 36.1426 7.58231L37.0348 5.38334C37.2183 4.83542 36.5791 4.39526 36.0056 4.16696Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M13.6889 17.0722C15.3028 17.0722 16.6111 15.7639 16.6111 14.15C16.6111 12.5361 15.3028 11.2278 13.6889 11.2278C12.075 11.2278 10.7667 12.5361 10.7667 14.15C10.7667 15.7639 12.075 17.0722 13.6889 17.0722Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M25.3778 18.5334C26.9917 18.5334 28.3 17.2251 28.3 15.6112C28.3 13.9973 26.9917 12.689 25.3778 12.689C23.7639 12.689 22.4555 13.9973 22.4555 15.6112C22.4555 17.2251 23.7639 18.5334 25.3778 18.5334Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M19.5333 28.7612C21.1472 28.7612 22.4556 27.4529 22.4556 25.839C22.4556 24.2251 21.1472 22.9167 19.5333 22.9167C17.9194 22.9167 16.6111 24.2251 16.6111 25.839C16.6111 27.4529 17.9194 28.7612 19.5333 28.7612Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Pizzas</span>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="category-name">
+              <div>
+                <svg
+                  width="37"
+                  height="30"
+                  viewBox="0 0 37 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.75 20.25L29.6632 14.3368C30.008 13.9921 30.4173 13.7187 30.8677 13.5323C31.3181 13.3458 31.8008 13.2499 32.2882 13.25H32.5C33.4283 13.25 34.3185 13.6187 34.9749 14.2751C35.6313 14.9315 36 15.8217 36 16.75C36 17.6783 35.6313 18.5685 34.9749 19.2249C34.3185 19.8813 33.4283 20.25 32.5 20.25H4.5C3.57174 20.25 2.6815 19.8813 2.02513 19.2249C1.36875 18.5685 1 17.6783 1 16.75C1 15.8217 1.36875 14.9315 2.02513 14.2751C2.6815 13.6187 3.57174 13.25 4.5 13.25H12.4013C15.1855 13.2501 17.8558 14.3561 19.8247 16.3247L23.75 20.25ZM2.75 20.25H34.25V23.75C34.25 25.1424 33.6969 26.4777 32.7123 27.4623C31.7277 28.4469 30.3924 29 29 29H8C6.60761 29 5.27226 28.4469 4.28769 27.4623C3.30312 26.4777 2.75 25.1424 2.75 23.75V20.25Z"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5018 8H18.5M18.5 1C10.4098 1 3.74401 4.073 2.85151 11.5C2.73601 12.4625 3.53401 13.25 4.50001 13.25H32.5C33.466 13.25 34.264 12.4625 34.1485 11.5C33.256 4.073 26.5903 1 18.5 1ZM9.75176 8H9.75001H9.75176ZM23.7518 6.25H23.75H23.7518Z"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Burgers</span>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="category-name">
+              <div>
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.7691 6.19732C11.4423 4.95272 12.4472 3.91903 13.6723 3.21101C14.8974 2.50298 16.2947 2.14832 17.7091 2.18639C19.1236 2.22446 20.4998 2.65378 21.685 3.42668C22.8702 4.19958 23.8181 5.28583 24.4234 6.56485C22.8301 6.60102 21.2818 7.10045 19.9676 8.00214C18.6535 8.90383 17.6303 10.1688 17.0231 11.6424C16.4636 10.7094 15.793 9.84775 15.0259 9.07628C13.7934 7.86626 12.3509 6.8907 10.7691 6.19732V6.19732ZM32.795 15.3133C32.9196 13.4462 32.4026 11.5926 31.3297 10.0596C30.2567 8.52658 28.6921 7.40625 26.8953 6.88425C26.3057 5.01622 25.1725 3.36645 23.6405 2.14583C22.1085 0.925209 20.2474 0.189182 18.295 0.0318315C16.3426 -0.125518 14.3876 0.302957 12.68 1.26249C10.9723 2.22202 9.58954 3.66902 8.70844 5.41852C7.8382 5.148 6.95202 4.93173 6.055 4.77097C4.53772 4.49789 2.9985 4.36534 1.45687 4.37501C1.32265 4.37745 1.18847 4.38183 1.05438 4.38813H1.04562C0.778208 4.40423 0.525948 4.51772 0.336514 4.70717C0.147079 4.89662 0.0335927 5.1489 0.0174998 5.41633V5.41852C-0.000598486 5.9091 -0.00132795 6.40018 0.0153124 6.89081C0.0437499 7.78556 0.137812 9.02815 0.391562 10.4326C0.660625 11.9246 1.11563 13.6354 1.89 15.3111H1.09375C0.803669 15.3111 0.52547 15.4263 0.320352 15.6315C0.115234 15.8366 0 16.1148 0 16.4049V17.4988C0 22.1404 1.84375 26.5919 5.12563 29.874C8.40752 33.1561 12.8587 35 17.5 35C22.1413 35 26.5925 33.1561 29.8744 29.874C33.1563 26.5919 35 22.1404 35 17.4988V16.4049C35 16.1148 34.8848 15.8366 34.6796 15.6315C34.4745 15.4263 34.1963 15.3111 33.9062 15.3111H32.795V15.3133ZM4.34 15.3133C3.39062 13.6025 2.84813 11.7277 2.54625 10.0454C2.33965 8.89668 2.22118 7.73383 2.19188 6.56704L2.44125 6.57579C3.255 6.60423 4.38813 6.69173 5.66563 6.92363C8.24688 7.3896 11.2787 8.42217 13.4794 10.623C14.8269 11.9705 15.7391 13.6332 16.3516 15.3133H12.4863L8.43063 11.2574C8.32893 11.1558 8.20823 11.0753 8.07542 11.0204C7.94261 10.9655 7.80028 10.9373 7.65657 10.9374C7.51286 10.9375 7.37057 10.9659 7.23784 11.021C7.1051 11.0761 6.98452 11.1568 6.88297 11.2585C6.78142 11.3602 6.7009 11.4809 6.64599 11.6137C6.59109 11.7465 6.56288 11.8889 6.56299 12.0326C6.56309 12.1763 6.59149 12.3186 6.64658 12.4513C6.70168 12.5841 6.78237 12.7047 6.88406 12.8062L9.39313 15.3133H4.34V15.3133ZM18.6637 15.3133C18.6444 15.2541 18.6247 15.195 18.6047 15.1361C18.5571 14.3108 18.6801 13.4845 18.966 12.7088C19.2519 11.9331 19.6946 11.2247 20.2665 10.6278C20.8384 10.0308 21.5271 9.55814 22.2898 9.23924C23.0524 8.92033 23.8726 8.76205 24.6992 8.77425C25.5257 8.78646 26.3409 8.9689 27.0938 9.31019C27.8467 9.65147 28.5212 10.1443 29.0752 10.7579C29.6292 11.3714 30.0507 12.0926 30.3136 12.8764C30.5765 13.6602 30.6751 14.4897 30.6031 15.3133H18.6659H18.6637ZM2.1875 17.5009H32.8125C32.8125 19.0214 32.5916 20.4893 32.1781 21.8763H2.82187C2.39994 20.4562 2.18626 18.9824 2.1875 17.5009V17.5009ZM17.5 32.8145C14.6018 32.8151 11.7629 31.9932 9.3133 30.4441C6.8637 28.8951 4.90397 26.6827 3.66188 24.0639H31.3381C30.096 26.6827 28.1363 28.8951 25.6867 30.4441C23.2371 31.9932 20.3982 32.8151 17.5 32.8145V32.8145Z"
+                    fill="#F72D57"
+                  />
+                </svg>
+
+                <span>Salads</span>
+              </div>
+            </div>
+            <!-- Item  -->
+            <div class="category-name">
+              <div>
+                <svg
+                  width="48"
+                  height="35"
+                  viewBox="0 0 48 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29 34H40.4409C41.1039 34 41.7424 33.7761 42.2284 33.3732C42.7144 32.9703 43.012 32.4182 43.0615 31.8275L46 7"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M38 7L39.2698 2.2L43 1"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M26 7L47 7"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M23.75 25.25L29.6632 19.3368C30.008 18.9921 30.4173 18.7187 30.8677 18.5323C31.3181 18.3458 31.8008 18.2499 32.2882 18.25H32.5C33.4283 18.25 34.3185 18.6187 34.9749 19.2751C35.6313 19.9315 36 20.8217 36 21.75C36 22.6783 35.6313 23.5685 34.9749 24.2249C34.3185 24.8813 33.4283 25.25 32.5 25.25H4.5C3.57174 25.25 2.6815 24.8813 2.02513 24.2249C1.36875 23.5685 1 22.6783 1 21.75C1 20.8217 1.36875 19.9315 2.02513 19.2751C2.6815 18.6187 3.57174 18.25 4.5 18.25H12.4013C15.1855 18.2501 17.8558 19.3561 19.8247 21.3247L23.75 25.25ZM2.75 25.25H34.25V28.75C34.25 30.1424 33.6969 31.4777 32.7123 32.4623C31.7277 33.4469 30.3924 34 29 34H8C6.60761 34 5.27226 33.4469 4.28769 32.4623C3.30312 31.4777 2.75 30.1424 2.75 28.75V25.25Z"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5017 13H18.5M18.5 6C10.4097 6 3.74398 9.073 2.85148 16.5C2.73598 17.4625 3.53398 18.25 4.49998 18.25H32.5C33.466 18.25 34.264 17.4625 34.1485 16.5C33.256 9.073 26.5902 6 18.5 6ZM9.75173 13H9.74998H9.75173ZM23.7517 11.25H23.75H23.7517Z"
+                    stroke="#F72D57"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Combos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Items -->
+          <div class="item-container">
+            <div class="items">
+              <!-- item -1 -->
+              <div class="item">
+                <img src="./img/pizza-1.png" alt="Pizza" class="item-image" />
+                <div class="item-details">
+                  <span class="item-name">Pepperoi Pizza</span>
+                  <span class="item-description">Di napoles</span>
+                  <span class="item-price">$11,99</span>
+                  <div>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -2 -->
+              <div class="item">
+                <img src="./img/pizza-1.png" alt="Pizza" class="item-image" />
+                <div class="item-details">
+                  <span class="item-name">Pepperoi Pizza</span>
+                  <span class="item-description">Di napoles</span>
+                  <span class="item-price">$11,99</span>
+                  <div>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -3 -->
+              <div class="item">
+                <img src="./img/pizza-1.png" alt="Pizza" class="item-image" />
+                <div class="item-details">
+                  <span class="item-name">Pepperoi Pizza</span>
+                  <span class="item-description">Di napoles</span>
+                  <span class="item-price">$11,99</span>
+                  <div>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item -4 -->
+              <div class="item">
+                <img src="./img/pizza-1.png" alt="Pizza" class="item-image" />
+                <div class="item-details">
+                  <span class="item-name">Pepperoi Pizza</span>
+                  <span class="item-description">Di napoles</span>
+                  <span class="item-price">$11,99</span>
+                  <div>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <h2 class="heading-2">
+            Get to know <span class="clr-primary">us</span>
+          </h2>
+
+          <div class="about-container">
+            <div class="about u-margin-top-big">
+              <div class="about__img-box">
+                <img src="./img/us-1.png" alt="about image" />
+              </div>
+              <div class="about__text-box">
+                <h3 class="heading-3">
+                  <span class="clr-primary">Teamwork</span> is the key to our
+                  sucess
+                </h3>
+                <p class="paragraph">
+                  At TasteNow we make sure that every decision is determined by
+                  a team of us. Everyone´s opinion matters, and as group, we are
+                  stronger. We firmly belive that team work, makes the dream
+                  work.
+                </p>
+              </div>
+            </div>
+
+            <div class="about u-margin-top-big">
+              <div class="about__img-box even">
+                <img src="./img/us-2.png" alt="about image" />
+              </div>
+              <div class="about__text-box">
+                <h3 class="heading-3">
+                  We are all in for the
+                  <span class="clr-primary">enviroment</span>
+                </h3>
+                <p class="paragraph">
+                  Taste Now donates $1 penny for every purchase made from the
+                  app to an organization that takes care of our enviromet. We
+                  belive that with everyone's help, we can make a better world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <div class="container">
+          <div class="footer">
+            <div class="footer__logo-container">
+              <a href="#" class="logo">Taste now</a>
+
+              <div class="social-icon">
+                <a href="#"
+                  ><img src="./img/f-icon.svg" alt="facebook link"
+                /></a>
+                <a href="#"
+                  ><img src="./img/i-icon.svg" alt="instagram link"
+                /></a>
+                <a href="#"
+                  ><img src="./img/t-icon.svg" alt="twitter link"
+                /></a>
+                <a href="#"
+                  ><img src="./img/y-icon.svg" alt="youtube link"
+                /></a>
+              </div>
+            </div>
+            <div class="other-links">
+              <div class="link-column">
+                <a href="#">Seslendirme ve Alt Jazz</a>
+                <a href="#">Media Market</a>
+                <a href="#">Gillie</a>
+                <a href="#">Size Last</a>
+              </div>
+              <div class="link-column">
+                <a href="#">Self Betimes</a>
+                <a href="#">Yatrmc İlişkileri</a>
+                <a href="#">Basal Himmler </a>
+              </div>
+              <div class="link-column">
+                <a href="#">Yard Market</a>
+                <a href="#">Is İmkanlar</a>
+                <a href="#">Car Tercihleri</a>
+              </div>
+              <div class="link-column">
+                <a href="#">Hedge Karla</a>
+                <a href="#">Mullein Koşulları</a>
+                <a href="#">Autumnal Bulgier</a>
+              </div>
+            </div>
+
+            <div class="social-icon-sm">
+              <a href="#"><img src="./img/f-icon.svg" alt="facebook link" /></a>
+              <a href="#"
+                ><img src="./img/i-icon.svg" alt="instagram link"
+              /></a>
+              <a href="#"><img src="./img/t-icon.svg" alt="twitter link" /></a>
+              <a href="#"><img src="./img/y-icon.svg" alt="youtube link" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
